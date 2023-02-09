@@ -12,7 +12,8 @@ import { HelloComponentComponent } from './hello-component/hello-component.compo
   imports: [
   ],
   exports: [
-    SamplesharedlibraryComponent
+    SamplesharedlibraryComponent,
+    HelloComponentComponent
   ]
 })
 export class SamplesharedlibraryModule { }
