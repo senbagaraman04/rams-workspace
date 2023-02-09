@@ -2,26 +2,69 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
 
-## Development server
+## Anguloar Workspace
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project has been created using [Angular Multi-project Workspace Environment](https://angular.io/guide/file-structure#setting-up-for-a-multi-project-workspace).
 
-## Code scaffolding
+## Project Structure 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+![Project Structure](./lib/Capture.JPG)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Project #1:   sample-application
+A sample application using angular 
+# Project #2:   sample-application2
+A sample application using angular 
+# Shared Lib:   samplesharedlib
+Shared library contains components shared between the two components
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Angular Code to create application and shared lib
 
-## Running end-to-end tests
+## 1. Create WorkSpace 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    The following command creates the empty workspace application.
 
-## Further help
+ ```
+ ng new rams-workspace --no-create-application
+ ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 2. Create  Application-1 and Application-2
+
+    The following command creates the  application.
+
+ ```
+  ng generate application application1
+  ng generate application application2
+ ```
+
+ ## 3. Create Shared Library
+
+ ```
+ng g library firstlibrary
+ ```
+
+ ## 4.Create a component in the applications 
+
+ ```
+ng generate component firstComponent  --project=application1
+ ``` 
+
+## 5.Create a component in the library
+```
+ng g c HelloComponent --project=firstlibrary  
+```
+The above comment creates the component in the library
+
+![New component in Shared Library](./lib/sample-shared-library-component.JPG)
+
+
+Export the same in the module, to be consumed in the application
+
+
+![Export the shared component in library](./lib/export.JPG)
+
+
+Consume the same in the application as normal 
+
+![Import the shared lib](./lib/import.JPG)
