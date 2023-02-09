@@ -28,8 +28,8 @@ jobs:
         
     - name: Build Sample Application 1
       run: |
-        npm run start:sample1
+        npm run build:app1
     
     - name: Build Sample Application 2
       run: |
-        npm run start:sample2
+        npm run build:app2

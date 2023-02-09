@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:app1":"ng build sample-application",
+    "build:app2":"ng build sample-application2",
     "start:sample1":"ng serve sample-application  --port=4301",
     "start:sample2":"ng serve sample-application2 --port=4302",
     "watch": "ng build --watch --configuration development",
