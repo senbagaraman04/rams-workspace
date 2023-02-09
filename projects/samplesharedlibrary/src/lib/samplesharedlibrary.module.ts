@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { SamplesharedlibraryComponent } from './samplesharedlibrary.component';
+import { HelloComponentComponent } from './hello-component/hello-component.component';
 
 
 
 @NgModule({
   declarations: [
-    SamplesharedlibraryComponent
+    SamplesharedlibraryComponent,
+    HelloComponentComponent
   ],
   imports: [
   ],
