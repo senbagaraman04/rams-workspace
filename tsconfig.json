@@ -17,8 +17,8 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "samplesharedlibrary": ["projects/samplesharedlibrary/src"],
-      "samplesharedlibrary/*": ["projects/samplesharedlibrary/src/*"],
+      "samplesharedlibrary": ["./projects/samplesharedlibrary/src"],
+      "samplesharedlibrary/*": ["./projects/samplesharedlibrary/src/*"],
       "@angular/*":["./node_modules/@angular/*"]
     },
     "target": "es2020",
