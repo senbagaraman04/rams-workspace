@@ -104,6 +104,7 @@
       }
     },
     "sample-application2": {
+    
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {

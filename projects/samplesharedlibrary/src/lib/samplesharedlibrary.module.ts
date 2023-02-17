@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { HelloComponentComponent } from './hello-component/hello-component.component';
 import { CommonModule } from '@angular/common';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -9,7 +10,8 @@ import { CommonModule } from '@angular/common';
     HelloComponentComponent
   ],
   imports: [
-     CommonModule
+     CommonModule,
+     MatButtonModule
   ],
   exports: [
     HelloComponentComponent

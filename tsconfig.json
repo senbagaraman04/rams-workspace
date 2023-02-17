@@ -17,9 +17,9 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "samplesharedlibrary": [
-        "dist/samplesharedlibrary"
-      ]
+      "samplesharedlibrary": ["projects/samplesharedlibrary/src"],
+      "samplesharedlibrary/*": ["projects/samplesharedlibrary/src/*"],
+      "@angular/*":["./node_modules/@angular/*"]
     },
     "target": "es2020",
     "module": "es2020",
@@ -32,6 +32,7 @@
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "preserveSymlinks": true
   }
 }
